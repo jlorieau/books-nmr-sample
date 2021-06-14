@@ -1,8 +1,8 @@
 NMR (Sample) by Justin Lorieau
 ==============================
 
+[![CC BY_NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)][cc-by-nc-nd]
 This work is licensed under a
-[![CC BY-NC-ND 4.0][cc-by-nc-nd-img]][cc-by-nc-nd]
 [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][cc-by-nc-nd]
 
 Built using [Disseminate] v2.3.7.
