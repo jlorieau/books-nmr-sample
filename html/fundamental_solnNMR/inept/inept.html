@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Fundamentals of NMR Spectroscopy</title>
+  <meta name="author" content="Justin Lorieau">
+  <meta name="template" content="books/tufte">
+  <meta name="disseminate" content="2.3.7">
+  <link rel="stylesheet" href="../../media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../media/css/base.css">
+  <link rel="stylesheet" href="../../media/css/default.css">
+  <link rel="stylesheet" href="../../media/css/pygments.css">
+
+  <link rel="stylesheet" href="../../media/css/tufte.css">
+</head>
+<body>
+  <div class="container">
+    
+<input type="checkbox" id="toggle-1" class="menu-toggle">
+<label for="toggle-1" class="menu-toggle">
+  <img src="../../media/icons/menu_inactive.svg" id="menu-toggle-inactive">
+  <img src="../../media/icons/menu_active.svg" id="menu-toggle-active">
+</label>
+<div class="menu">
+  <div id="menu-toolbar">
+    <ul class="functions list-group list-group-horizontal d-flex">
+      <!--  Link to root page  -->
+      <li class="list-group-item font-weight-bold mr-auto">
+        <a href="/">Disseminate</a>
+      </li>
+    </ul>
+  </div>
+  <div id="menu-content">
+    <ul class="docutils">
+      <li class="src">
+        <a href="../../../src/fundamental_solnNMR/inept/inept.dm">
+          <img src="../../media/icons/dm_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../tex/fundamental_solnNMR/inept/inept.tex">
+          <img src="../../media/icons/tex_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../pdf/fundamental_solnNMR/inept/inept.pdf">
+          <img src="../../media/icons/pdf_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../epub/index.epub">
+          <img src="../../media/icons/epub_icon.svg">
+        </a>
+      </li>
+      
+    </ul>
+    <ol class="toc">
+<li class="toc-level-0"><a href="../../index.html#title:index-dm-fundamentals-of-nmr-spectroscopy" class="ref">Fundamentals of NMR Spectroscopy</a></li>
+<ol>
+<li class="toc-level-2"><a href="#ch:fundamental-solnnmr-inept-inept-dm-inept-and-signal-enhancement" class="ref">Chapter 1. INEPT and Signal Enhancement</a></li>
+<ol>
+<li class="toc-level-3"><a href="#sec:fundamental-solnnmr-inept-inept-dm-theory" class="ref">1.1. Theory</a></li>
+<ol><li class="toc-level-4"><a href="#subsec:fundamental-solnnmr-inept-inept-dm-methine-amide-and-the-ax-spin-systems" class="ref">1.1.1. Methine, Amide and the AX Spin Systems</a></li></ol>
+</ol>
+<li class="toc-level-2"><a href="ref-inept.html#ch:fundamental-solnnmr-inept-ref-inept-dm-refocused-inept-delayed-decoupling-and-in-phase-spectra" class="ref">Chapter 2. Refocused INEPT, Delayed Decoupling and In-Phase Spectra</a></li>
+</ol>
+</ol>
+
+  </div>
+</div>
+
+
+    <article>
+  <div class="body">
+<h2 id="ch:fundamental-solnnmr-inept-inept-dm-inept-and-signal-enhancement"><span class="label"><span class="prefix">1</span> INEPT and Signal Enhancement</span></h2>
+<p>
+<span class="authors">Justin Lorieau</span></p>
+<p>The purpose of the <span class="abrv">INEPT</span> sequence <span class="sidenote">Morris GA, Freeman
+R. Enhancement of Nuclear Magnetic Resonance Signals by Polarization
+Transfer. J Am Chem Soc. 1979;101(3):760&#8211;762.</span> is to transfer the
+large magnetization from high-&gamma; nuclei, like <sup>1</sup>H or <sup>19</sup>F, to
+low-&gamma; nuclei (labeled &#8216;X&#8217;), like <sup>13</sup>C and <sup>15</sup>N. This transfer
+significantly improves the signal intensity of &#8216;X&#8217; nuclei when
+measuring their chemical shifts. For example, the magnetic moment and
+magnetization of <sup>1</sup>H nuclei is roughly 4 times greater than <sup>13</sup>C and
+10 times greater than <sup>15</sup>N. Additionally, the <sup>1</sup>H T<sub>1</sub> is typically
+much shorter than the T<sub>1</sub> for <sup>13</sup>C or <sup>15</sup>N, which allows a shorter
+recycle delay and the collection of a greater number of spectra.</p>
+<h3 id="sec:fundamental-solnnmr-inept-inept-dm-theory"><span class="label"><span class="prefix">1.1</span>. Theory</span></h3>
+<figure class="marginfig">
+  <img src="../../media/inept_28e2ce5d5bc5.svg">
+  <figcaption id="fig:inept-inept1" class="caption"><span class="label"><strong>Fig. 1.1</strong>. </span>The basic <span class="abrv">INEPT</span> sequence between nuclei <sup>1</sup>H
+    and X.</figcaption>
+</figure><p>The <span class="abrv">INEPT</span> sequence (<a href="#fig:inept-inept1" class="ref">Fig. 1.1</a>) transfers
+magnetization from <sup>1</sup>H nuclei bonded the &#8216;X&#8217; nuclei. The two
+nuclei must be bonded, or at least connected through intermediary
+bonds with other atoms, because the nuclei must share a J-coupling.</p>
+<p>The <span class="abrv">INEPT</span> sequence comprises a set of 90<sup>&#9675;</sup> pulses (thin bars),
+180<sup>&#9675;</sup> pulses (thick bars) and delays (&Delta;).</p>
+<h4 id="subsec:fundamental-solnnmr-inept-inept-dm-methine-amide-and-the-ax-spin-systems"><span class="label"><span class="prefix">1.1.1</span>. Methine, Amide and the AX Spin Systems</span></h4>
+<p>The first 90<span class="supsub">&#9675;<br>x</span> (<sup>1</sup>H) pulse creates <img src="../../media/eq_382cb76552f8.svg" class="eq"> <sup>1</sup>H magnetization.
+<span class="sidenote">A 90<span class="supsub">&#9675;<br>x</span> pulse rotates the magnetization by 90<sup>&#9675;</sup> with a phase
+of &#8216;x&#8217;.</span>  Thereafter, the <sup>1</sup>H 180<sup>&#9675;</sup> pulse in the middle of the two
+&Delta; delays acts as a Hahn-echo to refocus the <sup>1</sup>H chemical
+shifts. Without the accompanying 180<sup>&#9675;</sup> pulse on the &#8216;X&#8217; channel, the
+J-coupling between the <sup>1</sup>H and X nucleus would be refocused as
+well&#8212;and nothing would be accomplished. The 180<sup>&#9675;</sup> pulse on the &#8216;X&#8217;
+channel acts to <i>cancel</i> the refocusing effect of the <sup>1</sup>H 180<sup>&#9675;</sup>
+pulse for the J-coupling.</p>
+<p>During the first delta period, the <img src="../../media/eq_b125983c4ac0.svg" class="eq"> magnetization evolves
+under the <sup>1</sup>H chemical shift (&omega;<sub>H</sub>) and the <sup>1</sup>H-X
+J-coupling. Since the chemical shift and J-coupling Hamiltonians
+commute, the rotations of each can be conducted sequentially.</p>
+<p>In the first step, the operators are propagated for the 90<span class="supsub">&#9675;<br>x</span> (<sup>1</sup>H) pulse
+and the first '&Delta;' period. We&#8217;ll use a <sup>15</sup>N nucleus as an example
+of an &#8216;X&#8217; nucleus.</p>
+<figure class="marginfig">
+  <img src="../../media/inept_750faf39a819.svg">
+  <figcaption id="caption-e094a2f6ff" class="caption"><span class="label"><strong>Fig. 1.2</strong>. </span>The first step of the <span class="abrv">INEPT</span> sequence highlighted in
+    red.</figcaption>
+  </figure><p><img src="../../media/eq_8b191ce25f98.svg" class="eq blockeq"></p>
+<p>In the second step, the 180<span class="supsub">&#9675;<br>x</span> pulses on the <sup>1</sup>H and
+&#8216;X&#8217; channels inverts <img src="../../media/eq_6278e5c4e1ef.svg" class="eq"> and <img src="../../media/eq_e007b37ea238.svg" class="eq"> terms because
+these are orthogonal to the x-phase of the pulse.<span class="sidenote">
+The many cosine and sine terms can be abbreviated to simplify
+  their notation in equations.
+  <img src="../../media/eq_c1983a0b09ef.svg" class="eq blockeq">
+</span></p>
+<figure class="marginfig">
+  <img src="../../media/inept_863891104408.svg">
+    <figcaption id="caption-4309bc4697" class="caption"><span class="label"><strong>Fig. 1.3</strong>. </span>The second step of the <span class="abrv">INEPT</span> sequence highlighted in
+  red.</figcaption>
+  </figure><p><img src="../../media/eq_1f720c50eb93.svg" class="eq blockeq"></p>
+<p>In the third step, we&#8217;ll propagate the `&Delta;' delay for the chemical shift
+first.</p>
+<figure class="marginfig">
+  <img src="../../media/inept_3a2decf4b06c.svg">
+  <figcaption id="caption-b5c24eb647" class="caption"><span class="label"><strong>Fig. 1.4</strong>. </span>The third step of the <span class="abrv">INEPT</span> sequence highlighted in
+    red.</figcaption>
+</figure><p><img src="../../media/eq_73a8c6f71e93.svg" class="eq blockeq"></p>
+<p>These terms can be grouped.</p>
+<p><img src="../../media/eq_d87e02505d01.svg" class="eq blockeq"></p>
+<p>Thereafter, we propagate the '&Delta;' delay for the J<sub>NH</sub>-coupling and simplify the expression.</p>
+<p><img src="../../media/eq_8d2d15a52d0a.svg" class="eq blockeq">
+</p>
+</div>
+
+    </article>
+    <footer>
+  <!-- navigation block for templates -->
+<span class="prev">
+  <a href="../../index.html#title:index-dm-fundamentals-of-nmr-spectroscopy" class="ref">Fundamentals of NMR Spectroscopy</a>
+</span>
+<span class="next">
+  <a href="ref-inept.html#ch:fundamental-solnnmr-inept-ref-inept-dm-refocused-inept-delayed-decoupling-and-in-phase-spectra" class="ref">Chapter 2. Refocused INEPT, Delayed Decoupling and In-Phase Spectra</a>
+</span>
+
+    </footer>
+  </div>
+</body>
+</html>

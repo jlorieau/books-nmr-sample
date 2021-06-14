@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Fundamentals of NMR Spectroscopy</title>
+  <meta name="author" content="Justin Lorieau">
+  <meta name="template" content="books/tufte">
+  <meta name="disseminate" content="2.3.7">
+  <link rel="stylesheet" href="../../media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../media/css/base.css">
+  <link rel="stylesheet" href="../../media/css/default.css">
+  <link rel="stylesheet" href="../../media/css/pygments.css">
+
+  <link rel="stylesheet" href="../../media/css/tufte.css">
+</head>
+<body>
+  <div class="container">
+    
+<input type="checkbox" id="toggle-1" class="menu-toggle">
+<label for="toggle-1" class="menu-toggle">
+  <img src="../../media/icons/menu_inactive.svg" id="menu-toggle-inactive">
+  <img src="../../media/icons/menu_active.svg" id="menu-toggle-active">
+</label>
+<div class="menu">
+  <div id="menu-toolbar">
+    <ul class="functions list-group list-group-horizontal d-flex">
+      <!--  Link to root page  -->
+      <li class="list-group-item font-weight-bold mr-auto">
+        <a href="/">Disseminate</a>
+      </li>
+    </ul>
+  </div>
+  <div id="menu-content">
+    <ul class="docutils">
+      <li class="src">
+        <a href="../../../src/fundamental_solnNMR/inept/ref-inept.dm">
+          <img src="../../media/icons/dm_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../tex/fundamental_solnNMR/inept/ref-inept.tex">
+          <img src="../../media/icons/tex_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../pdf/fundamental_solnNMR/inept/ref-inept.pdf">
+          <img src="../../media/icons/pdf_icon.svg">
+        </a>
+      </li>
+      
+      <li>
+        <a href="../../../epub/index.epub">
+          <img src="../../media/icons/epub_icon.svg">
+        </a>
+      </li>
+      
+    </ul>
+    <ol class="toc">
+<li class="toc-level-0"><a href="../../index.html#title:index-dm-fundamentals-of-nmr-spectroscopy" class="ref">Fundamentals of NMR Spectroscopy</a></li>
+<ol>
+<li class="toc-level-2"><a href="inept.html#ch:fundamental-solnnmr-inept-inept-dm-inept-and-signal-enhancement" class="ref">Chapter 1. INEPT and Signal Enhancement</a></li>
+<li class="toc-level-2"><a href="#ch:fundamental-solnnmr-inept-ref-inept-dm-refocused-inept-delayed-decoupling-and-in-phase-spectra" class="ref">Chapter 2. Refocused INEPT, Delayed Decoupling and In-Phase Spectra</a></li>
+<ol>
+<li class="toc-level-3"><a href="#sec:fundamental-solnnmr-inept-ref-inept-dm-theory" class="ref">2.1. Theory</a></li>
+<ol>
+<li class="toc-level-4"><a href="#subsec:fundamental-solnnmr-inept-ref-inept-dm-methine-amide-and-the-ax-spin-system" class="ref">2.1.1. Methine, Amide and the AX Spin System</a></li>
+<li class="toc-level-4"><a href="#subsec:fundamental-solnnmr-inept-ref-inept-dm-cosine-and-sine-modulation" class="ref">2.1.2. Cosine and Sine Modulation</a></li>
+<li class="toc-level-4"><a href="#subsec:fundamental-solnnmr-inept-ref-inept-dm-methylene-methyl-ax2-and-ax3-spin-systems" class="ref">2.1.3. Methylene, Methyl, AX2 and AX3 Spin Systems</a></li>
+</ol>
+</ol>
+</ol>
+</ol>
+
+  </div>
+</div>
+
+
+    <article>
+  <div class="body">
+<h2 id="ch:fundamental-solnnmr-inept-ref-inept-dm-refocused-inept-delayed-decoupling-and-in-phase-spectra"><span class="label"><span class="prefix">2</span> Refocused INEPT, Delayed Decoupling and In-Phase Spectra</span></h2>
+<p>
+<span class="authors">Justin Lorieau</span></p>
+<p>The refocused INEPT sequence<span class="sidenote">Burum D., Ernst R. Net polarization
+  transfer via a J-ordered state for signal enhancement of low-sensitivity
+  nuclei. J Magn Reson. 1980 Apr;39(1):163&#8211;168. </span>
+(<a href="#fig:ref-inept_ref-inept" class="ref">Fig. 2.1</a>) converts the anti-phase
+magnetization of the INEPT sequence into in-phase magnetization, while
+still benefiting from the signal enhancement of the INEPT
+sequence. This approach has the advantage that the spectrum can be
+decoupled to produce singlet peaks.</p>
+<h3 id="sec:fundamental-solnnmr-inept-ref-inept-dm-theory"><span class="label"><span class="prefix">2.1</span>. Theory</span></h3>
+<figure class="marginfig">
+  <img src="../../media/ref-inept_3533f613ccb5.svg">
+    <figcaption id="fig:ref-inept_ref-inept" class="caption"><span class="label"><strong>Fig. 2.1</strong>. </span>The refocused INEPT experiment.</figcaption>
+  </figure><figure class="marginfig">
+  <img src="../../media/plots/ref-inept/inept_vs_ref_inept_H-dcpl.svg">
+  <figcaption id="fig:inept_inept_v_refinept_H-dcpl" class="caption"><span class="label"><strong>Fig. 2.2</strong>. </span>Comparison of <sup>13</sup>C spectra for the INEPT sequence and
+    refocused INEPT sequence with <sup>1</sup>H decoupling during
+    <sup>13</sup>C acquisition.</figcaption>
+</figure><p>The <span class="abbrv">INEPT</span> sequence produces
+anti-phase magnetization (<i>e.g.</i> <img src="../../media/eq_e1bfbe1642c2.svg" class="eq">) with peaks of
+opposite sign, and the refocused <span class="abbrv">INEPT</span> produces in-phase
+magnetization (<i>e.g.</i> <img src="../../media/eq_c1e8bd679903.svg" class="eq">) with peaks of the same
+sign. When <sup>1</sup>H decoupling is applied to the anti-phase
+magnetization of the <span class="abbrv">INEPT</span> sequence, the peaks cancel each other
+to produce a null spectrum. The objective of the refocused <span class="abbrv">INEPT</span>
+and DEPT experiments is to produce in-phase magnetization that can be
+decoupled to produce singlet peaks.</p>
+<h4 id="subsec:fundamental-solnnmr-inept-ref-inept-dm-methine-amide-and-the-ax-spin-system"><span class="label"><span class="prefix">2.1.1</span>. Methine, Amide and the AX Spin System</span></h4>
+<p>The <i>refocused</i> INEPT sequence produces in-phase magnetization
+that can <sup>1</sup>H decoupled to produce high intensity singlet peaks.</p>
+<p>In this example, we&#8217;ll use a <sup>1</sup>H spin bonded to a <sup>13</sup>C
+spin. If we use a delay, <img src="../../media/eq_cc4749a0cf11.svg" class="eq">, the first step
+of the sequence is simply an <span class="abbrv">INEPT</span> sequence (<a href="#fig:ref-inept_ref-inept_step1" class="ref">Fig. 2.3</a>).</p>
+<p><img src="../../media/eq_7bd603b63e13.svg" class="eq blockeq"></p>
+<figure class="marginfig">
+  <img src="../../media/ref-inept_bff6eb2a6dad.svg">
+  <figcaption id="fig:ref-inept_ref-inept_step1" class="caption"><span class="label"><strong>Fig. 2.3</strong>. </span>The first step of the refocused INEPT sequence highlighted in
+  red.</figcaption>
+</figure><p>In the second step, we&#8217;ll only propagate the J<sub>CH</sub>-coupling since the
+`<img src="../../media/eq_5eed7a32e38e.svg" class="eq">' pulse sequence block
+refocuses the <sup>13</sup>C chemical shifts (<a href="#fig:ref-inept_ref-inept_step2" class="ref">Fig. 2.4</a>).
+Thereafter, we&#8217;ll apply the two 180<sup>&#9675;</sup> pulses.</p>
+<p><img src="../../media/eq_ce6041fc30df.svg" class="eq blockeq"></p>
+<figure class="marginfig">
+    <img src="../../media/ref-inept_9781760da605.svg">
+  <figcaption id="fig:ref-inept_ref-inept_step2" class="caption"><span class="label"><strong>Fig. 2.4</strong>. </span>The second step of the refocused INEPT sequence highlighted
+   in red.</figcaption>
+</figure><p>The final and third step (<a href="#fig:ref-inept_ref-inept_step3" class="ref">Fig. 2.5</a>) propagates
+the magnetization with another <img src="../../media/eq_1f86398a9f54.svg" class="eq"> period.</p>
+<p><img src="../../media/eq_2f7dfb66a172.svg" class="eq blockeq"></p>
+<figure class="marginfig">
+  <img src="../../media/ref-inept_47588112ea3f.svg">
+  <figcaption id="fig:ref-inept_ref-inept_step3" class="caption"><span class="label"><strong>Fig. 2.5</strong>. </span>The third step of the refocused INEPT sequence highlighted in red.</figcaption>
+</figure><p>The <img src="../../media/eq_bd4777e401cb.svg" class="eq"> term is maximum when <img src="../../media/eq_4bc9915710c1.svg" class="eq">. As with
+the <span class="abbrv">INEPT</span> sequence, the <img src="../../media/eq_bd4777e401cb.svg" class="eq"> magnetization is enhanced by a
+factor <img src="../../media/eq_1e1d83b0c9fb.svg" class="eq"> over the unenhanced version.</p>
+<p>For a <sup>13</sup>C-INEPT between for a <sup>1</sup>H spin bonded to
+a <sup>13</sup>C (J<sub>CH</sub> = 145 Hz), the magnetization after the
+<span class="abbrvinept"></span> is <img src="../../media/eq_656a8d6b9ec2.svg" class="eq">. The refocused <span class="abbrv">INEPT</span> experiment
+produces in-phase magnetization, <img src="../../media/eq_bd4777e401cb.svg" class="eq">, suitable for <sup>1</sup>H
+decoupling (<a href="#fig:inept_inept_v_refinept" class="ref">Fig. 2.6</a>).</p>
+<figure class="figure">
+  <span class="panel w33">
+    a. Magnetization after INEPT
+    <img src="../../media/asy/ref-inept/CH_before.svg" class="w100">
+  </span>
+  <span class="panel w33">
+    b. Magnetization after ref-INEPT
+    <img src="../../media/asy/ref-inept/CH_after.svg" class="w100">
+  </span>
+  <span class="panel w33">
+    c. Comparison of Spectra
+    <img src="../../media/plots/ref-inept/inept_vs_ref_inept.svg" class="w100">
+  </span>
+  <figcaption id="fig:inept_inept_v_refinept" class="caption"><span class="label"><strong>Fig. 2.6</strong>. </span>Comparison of the <span class="abbrv">INEPT</span> sequence and the refocused
+    <span class="abbrv">INEPT</span> sequence for a CH group.</figcaption>
+</figure><h4 id="subsec:fundamental-solnnmr-inept-ref-inept-dm-cosine-and-sine-modulation"><span class="label"><span class="prefix">2.1.2</span>. Cosine and Sine Modulation</span></h4>
+<h4 id="subsec:fundamental-solnnmr-inept-ref-inept-dm-methylene-methyl-ax2-and-ax3-spin-systems"><span class="label"><span class="prefix">2.1.3</span>. Methylene, Methyl, AX2 and AX3 Spin Systems</span></h4>
+<p>Different <img src="../../media/eq_1f86398a9f54.svg" class="eq"> periods emphasize different types of spin
+systems. Varying <img src="../../media/eq_1f86398a9f54.svg" class="eq"> periods is commonly used to differentiate
+between CH, CH<sub>2</sub> and CH<sub>3</sub> groups. This principal applies to
+other X spins, such as <sup>15</sup>N, but in the case of
+NH<sub>2</sub> and NH<sub>3</sub> groups, rapid hydrogen
+exchange with the solvent may impede the discrimination between these groups.</p>
+<p>The initial <span class="abbrv">INEPT</span> period behaves the same for CH, CH<sub>2</sub> and
+CH<sub>3</sub> groups. This is because each <sup>1</sup>H spin is only bonded to
+one <sup>13</sup>C spin.</p>
+<p>Once the magnetization is converted to transverse magnetization for
+the <sup>13</sup>C spin, the magnetization evolves with J-couplings to
+multiple <sup>1</sup>H spins during the rest of the refocused INEPT. This
+is because, from the <sup>13</sup>C spin&#8217;s perspective, a CH group
+appears as a doublet, a CH<sub>2</sub> group appears as a triplet and a CH<sub>3</sub>
+group appears as a quartet.</p>
+<p>The conversion to <img src="../../media/eq_bd4777e401cb.svg" class="eq"> magnetization follows different time
+dependencies for the CH (AX), CH<sub>2</sub> (AX2) and CH<sub>3</sub> (AX3) groups.
+</p>
+</div>
+
+    </article>
+    <footer>
+  <!-- navigation block for templates -->
+<span class="prev">
+  <a href="inept.html#ch:fundamental-solnnmr-inept-inept-dm-inept-and-signal-enhancement" class="ref">Chapter 1. INEPT and Signal Enhancement</a>
+</span>
+<span class="next">
+  
+</span>
+
+    </footer>
+  </div>
+</body>
+</html>
