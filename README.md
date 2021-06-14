@@ -19,4 +19,4 @@ index.dm     4            126 / 126 (100.0%)
 
 [Disseminate]: https://github.com/dissemia/disseminate
 [cc-by-nc-nd]: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-[cc-by-nd-nd-img]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nd-img]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
