@@ -1,3 +1,6 @@
 # Disseminate temporary files
 .cache
 src/pulseseq.asy
+
+# Pycharm
+.idea
